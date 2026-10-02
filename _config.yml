@@ -1,0 +1,6 @@
+# GitHub Pages runs Jekyll by default. This site is plain HTML; Jekyll only
+# copies it. Folders starting with "_" (like _archive/) are never published.
+exclude:
+  - _archive
+  - README.md
+  - 10keyz-site-brief.md
