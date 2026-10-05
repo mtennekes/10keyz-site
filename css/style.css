@@ -294,13 +294,22 @@ ul.plain li { margin: .25rem 0; }
   position: absolute;
   left: 50%;
   top: 50%;
-  width: 2.4rem;
-  height: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3px;
+  width: 2.8rem;
+  height: 2.8rem;
+  padding: 4px;
   transform: translate(-50%, -50%);
   border-radius: 50%;
-  background: conic-gradient(var(--pc2) 0 25%, var(--pc11) 0 50%, var(--pc5) 0 75%, var(--pc1) 0);
-  box-shadow: 0 0 0 6px var(--bg);
+  background: var(--bg);
 }
+/* Four separate quarters, so neighbouring colours of similar lightness
+   stay distinct. Same order as the blocks. */
+.pillars-hub i:nth-child(1) { background: var(--pc1);  border-top-left-radius: 100%; }
+.pillars-hub i:nth-child(2) { background: var(--pc2);  border-top-right-radius: 100%; }
+.pillars-hub i:nth-child(3) { background: var(--pc5);  border-bottom-left-radius: 100%; }
+.pillars-hub i:nth-child(4) { background: var(--pc11); border-bottom-right-radius: 100%; }
 .pillars-note { color: var(--muted); font-size: .95rem; }
 
 /* Quotes */
