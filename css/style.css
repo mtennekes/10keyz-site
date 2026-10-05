@@ -251,6 +251,58 @@ ul.plain li { margin: .25rem 0; }
 .cards strong { display: block; font-size: 1.05rem; }
 .cards span { color: var(--muted); font-size: .95rem; }
 
+/* Four connected pillars (Lessons: how I teach). A 2x2 grid with a
+   hub in the middle whose quarters match the dots of the four blocks. */
+
+.pillars { position: relative; margin: 1.25rem 0 .5rem; }
+.pillars ul {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pillars li {
+  padding: 1rem 1.1rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  font-size: .95rem;
+  color: var(--muted);
+}
+/* Keep text clear of the hub. */
+.pillars li:nth-child(odd)  { padding-right: 1.6rem; }
+.pillars li:nth-child(even) { padding-left: 1.6rem; }
+.pillars li:nth-child(-n+2) { padding-bottom: 1.5rem; }
+.pillars li:nth-child(n+3)  { padding-top: 1.5rem; }
+.pillars strong { display: block; color: var(--text); font-size: 1.05rem; margin-bottom: .2rem; }
+.pillars strong::before {
+  content: "";
+  display: inline-block;
+  width: .6em;
+  height: .6em;
+  margin-right: .45em;
+  border-radius: 50%;
+  background: var(--dot);
+}
+.pillars li:nth-child(1) { --dot: var(--pc1); }
+.pillars li:nth-child(2) { --dot: var(--pc2); }
+.pillars li:nth-child(3) { --dot: var(--pc5); }
+.pillars li:nth-child(4) { --dot: var(--pc11); }
+.pillars-hub {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 2.4rem;
+  height: 2.4rem;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: conic-gradient(var(--pc2) 0 25%, var(--pc11) 0 50%, var(--pc5) 0 75%, var(--pc1) 0);
+  box-shadow: 0 0 0 6px var(--bg);
+}
+.pillars-note { color: var(--muted); font-size: .95rem; }
+
 /* Quotes */
 
 .quote {
