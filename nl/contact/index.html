@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact · 10Keyz</title>
-  <meta name="description" content="Contactgegevens en bedrijfsgegevens van 10Keyz.">
+  <title>Contact · 10keyz</title>
+  <meta name="description" content="Contactgegevens en bedrijfsgegevens van 10keyz.">
   <link rel="canonical" href="https://10keyz.com/nl/contact/">
   <link rel="alternate" hreflang="en" href="https://10keyz.com/contact/">
   <link rel="alternate" hreflang="nl" href="https://10keyz.com/nl/contact/">
@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="p-contact">
-  <a class="strip" href="/nl/apps/#kleuren" title="De 12 intervalkleuren van SpiceMap" aria-label="De 12 intervalkleuren van SpiceMap"><i class="pc0"></i><i class="pc1"></i><i class="pc2"></i><i class="pc3"></i><i class="pc4"></i><i class="pc5"></i><i class="pc6"></i><i class="pc7"></i><i class="pc8"></i><i class="pc9"></i><i class="pc10"></i><i class="pc11"></i></a>
+  <div class="strip" aria-hidden="true"></div>
   <header class="site-header">
     <div class="wrap">
-    <a class="brand" href="/nl/">10<span>K</span>eyz</a>
+    <a class="brand" href="/nl/">10<span class="k">k</span>eyz</a>
     <!-- NAV (zelfde op elke Nederlandse pagina). Om een pagina te verbergen die
          nog niet publiek is: verwijder elke regel met phase:<naam>; zie README.md. -->
     <nav class="site-nav" aria-label="Hoofdmenu">
@@ -35,36 +35,33 @@
   <main>
     <div class="wrap">
       <h1>Contact</h1>
-      <p class="lead">Je bereikt me het makkelijkst per e-mail: <span class="todo">[TODO: email]</span></p>
-      <p>Voor lessen, boekingen, SpiceMap support of iets anders.</p>
+      <p class="lead">Je bereikt me het makkelijkst per e-mail.</p>
+      <dl class="details">
+        <dt>Gitaarles</dt><dd><a href="mailto:lessons@10keyz.com">lessons@10keyz.com</a></dd> <!-- phase:lessons -->
+        <dt>Live muziek</dt><dd><a href="mailto:live@10keyz.com">live@10keyz.com</a></dd> <!-- phase:live -->
+        <dt>SpiceMap</dt><dd><a href="mailto:support@10keyz.com">support@10keyz.com</a></dd> <!-- phase:apps -->
+        <dt>Overig</dt><dd><a href="mailto:info@10keyz.com">info@10keyz.com</a></dd>
+      </dl>
 
       <h2>Bedrijfsgegevens</h2>
       <dl class="details">
-        <dt>Handelsnaam</dt><dd>10Keyz</dd>
-        <dt>Naam</dt><dd>Martijn Tennekes</dd>
-        <dt>Adres</dt><dd><span class="todo">[TODO: address]</span></dd>
+        <dt>Bedrijfsnaam</dt><dd>10keyz</dd>
+        <dt>Eigenaar</dt><dd>Martijn Tennekes</dd>
+        <dt>Adres</dt><dd><span class="todo">[TODO: adres]</span></dd>
         <dt>KvK</dt><dd><span class="todo">[TODO: KvK-nummer]</span></dd>
         <dt>Btw-id</dt><dd><span class="todo">[TODO: btw-id]</span></dd>
-        <dt>E-mail</dt><dd><span class="todo">[TODO: email]</span></dd>
+        <dt>E-mail</dt><dd><a href="mailto:info@10keyz.com">info@10keyz.com</a></dd>
       </dl>
     </div>
   </main>
-  <!-- FOOTER: bedrijfsgegevens, zelfde op elke Nederlandse pagina -->
+  <!-- FOOTER: zelfde op elke Nederlandse pagina, behalve het e-mailadres, dat bij de pagina past. Volledige bedrijfsgegevens staan op /nl/contact/. -->
   <footer class="site-footer">
     <div class="wrap">
-      <dl class="details">
-        <dt>Handelsnaam</dt><dd>10Keyz</dd>
-        <dt>Naam</dt><dd>Martijn Tennekes</dd>
-        <dt>Adres</dt><dd><span class="todo">[TODO: address]</span></dd>
-        <dt>KvK</dt><dd><span class="todo">[TODO: KvK-nummer]</span></dd>
-        <dt>Btw-id</dt><dd><span class="todo">[TODO: btw-id]</span></dd>
-        <dt>E-mail</dt><dd><span class="todo">[TODO: email]</span></dd>
-      </dl>
+      <p class="footer-legal">10keyz · Martijn Tennekes · <a href="mailto:info@10keyz.com">info@10keyz.com</a> · KvK <span class="todo">[TODO: KvK-nummer]</span></p>
       <ul class="footer-links">
-        <li><a href="/nl/contact/">Contact</a></li>
+        <li><a href="/nl/contact/">Contact en bedrijfsgegevens</a></li>
         <li><a href="/nl/privacy/">Privacy</a></li>
         <li><a href="/nl/voorwaarden/">Voorwaarden</a></li>
-        <li><a href="/nl/apps/spicemap/support/">SpiceMap support</a></li>
       </ul>
     </div>
   </footer>

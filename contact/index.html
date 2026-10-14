@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact · 10Keyz</title>
-  <meta name="description" content="Contact details and business information for 10Keyz.">
+  <title>Contact · 10keyz</title>
+  <meta name="description" content="Contact details and business information for 10keyz.">
   <link rel="canonical" href="https://10keyz.com/contact/">
   <link rel="alternate" hreflang="en" href="https://10keyz.com/contact/">
   <link rel="alternate" hreflang="nl" href="https://10keyz.com/nl/contact/">
@@ -13,10 +13,10 @@
   <link rel="stylesheet" href="/css/style.css">
 </head>
 <body class="p-contact">
-  <a class="strip" href="/apps/#colours" title="The 12 interval colours of SpiceMap" aria-label="The 12 interval colours of SpiceMap"><i class="pc0"></i><i class="pc1"></i><i class="pc2"></i><i class="pc3"></i><i class="pc4"></i><i class="pc5"></i><i class="pc6"></i><i class="pc7"></i><i class="pc8"></i><i class="pc9"></i><i class="pc10"></i><i class="pc11"></i></a>
+  <div class="strip" aria-hidden="true"></div>
   <header class="site-header">
     <div class="wrap">
-    <a class="brand" href="/">10<span>K</span>eyz</a>
+    <a class="brand" href="/">10<span class="k">k</span>eyz</a>
     <!-- NAV (same on every English page). To hide a page that is not public yet,
          delete every line marked phase:<name> across the site; see README.md. -->
     <nav class="site-nav" aria-label="Main">
@@ -35,36 +35,33 @@
   <main>
     <div class="wrap">
       <h1>Contact</h1>
-      <p class="lead">The easiest way to reach me is by email: <span class="todo">[TODO: email]</span></p>
-      <p>For lessons, bookings, SpiceMap support or anything else.</p>
+      <p class="lead">The easiest way to reach me is by email.</p>
+      <dl class="details">
+        <dt>Guitar lessons</dt><dd><a href="mailto:lessons@10keyz.com">lessons@10keyz.com</a></dd> <!-- phase:lessons -->
+        <dt>Live music</dt><dd><a href="mailto:live@10keyz.com">live@10keyz.com</a></dd> <!-- phase:live -->
+        <dt>SpiceMap</dt><dd><a href="mailto:support@10keyz.com">support@10keyz.com</a></dd> <!-- phase:apps -->
+        <dt>Anything else</dt><dd><a href="mailto:info@10keyz.com">info@10keyz.com</a></dd>
+      </dl>
 
       <h2>Business details</h2>
       <dl class="details">
-        <dt>Trade name</dt><dd>10Keyz</dd>
-        <dt>Name</dt><dd>Martijn Tennekes</dd>
+        <dt>Business name</dt><dd>10keyz</dd>
+        <dt>Owner</dt><dd>Martijn Tennekes</dd>
         <dt>Address</dt><dd><span class="todo">[TODO: address]</span></dd>
         <dt>KvK</dt><dd><span class="todo">[TODO: KvK number]</span></dd>
         <dt>BTW-id</dt><dd><span class="todo">[TODO: BTW-id]</span></dd>
-        <dt>Email</dt><dd><span class="todo">[TODO: email]</span></dd>
+        <dt>Email</dt><dd><a href="mailto:info@10keyz.com">info@10keyz.com</a></dd>
       </dl>
     </div>
   </main>
-  <!-- FOOTER: business details (Dutch law), same on every English page -->
+  <!-- FOOTER: same on every English page except the email address, which matches the page. Full business details are on /contact/. -->
   <footer class="site-footer">
     <div class="wrap">
-      <dl class="details">
-        <dt>Trade name</dt><dd>10Keyz</dd>
-        <dt>Name</dt><dd>Martijn Tennekes</dd>
-        <dt>Address</dt><dd><span class="todo">[TODO: address]</span></dd>
-        <dt>KvK</dt><dd><span class="todo">[TODO: KvK number]</span></dd>
-        <dt>BTW-id</dt><dd><span class="todo">[TODO: BTW-id]</span></dd>
-        <dt>Email</dt><dd><span class="todo">[TODO: email]</span></dd>
-      </dl>
+      <p class="footer-legal">10keyz · Martijn Tennekes · <a href="mailto:info@10keyz.com">info@10keyz.com</a> · KvK <span class="todo">[TODO: KvK number]</span></p>
       <ul class="footer-links">
-        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/contact/">Contact and business details</a></li>
         <li><a href="/privacy/">Privacy</a></li>
         <li><a href="/terms/">Terms</a></li>
-        <li><a href="/apps/spicemap/support/">SpiceMap support</a></li>
       </ul>
     </div>
   </footer>

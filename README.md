@@ -1,6 +1,6 @@
 # 10keyz.com
 
-Static site for 10Keyz (Martijn Tennekes): guitar lessons, live music and apps.
+Static site for 10keyz (Martijn Tennekes): guitar lessons, live music and apps.
 Plain HTML and CSS, no build step, no JavaScript, no cookies. Served from this
 repo by GitHub Pages (`CNAME` = `10keyz.com`). `spicemap.10keyz.com` lives in
 a separate repo.
@@ -33,9 +33,12 @@ Every page has `hreflang` links to its counterpart and an `EN | NL` switch.
 All styles are in `css/style.css`; accent colours are SpiceMap's pitch-class
 palette (`--pc1` … `--pc11`).
 
-The navigation (`<!-- NAV -->` … `<!-- /NAV -->`) and the footer with the
-business details are identical on every page of the same language. When you
-change one, change them all (find and replace across the repo).
+The navigation (`<!-- NAV -->` … `<!-- /NAV -->`) is identical on every page
+of the same language. The footer is a one-liner (name, email, KvK) that is the
+same everywhere except the email address, which matches the page: lessons@ on
+the lessons pages, live@ on live, support@ on apps, info@ elsewhere. Full
+business details (address, BTW-id) are only on the contact pages. When you
+change one of these, change them all (find and replace across the repo).
 
 ## Hiding a page (phased launch)
 
